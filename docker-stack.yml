@@ -21,6 +21,8 @@ services:
       - '--web.console.templates=/usr/share/prometheus/consoles'
       - '--web.enable-lifecycle'
       - '--web.enable-admin-api'
+      - '--web.external-url=https://sicepat.codeoffice.net/prometheus'
+      - '--web.route-prefix=/'
     ports:
       - 9090:9090
     depends_on:
